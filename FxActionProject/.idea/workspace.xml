@@ -58,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pl/javastart/mp3player/main/Main.java">
+      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="218">
+              <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,23 +70,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/javastart/mp3player/controller/MainController.java">
+      <file leaf-file-name="Exercise48Pane.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/view/Exercise48Pane.fxml">
+          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise48Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/main/Exercise48Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="272">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise48Controller.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/controller/Exercise48Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MainPane.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/javastart/mp3player/view/MainPane.fxml">
+        <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/view/MainPane.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -98,6 +122,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -110,10 +135,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/pl/javastart/mp3player/view/MainPane.fxml" />
-        <option value="$PROJECT_DIR$/src/pl/javastart/mp3player/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/pl/javastart/mp3player/main/Main.java" />
+        <option value="$PROJECT_DIR$/FxActionProject.iml" />
+        <option value="$PROJECT_DIR$/src/pl/javastart/fxaction/view/MainPane.fxml" />
+        <option value="$PROJECT_DIR$/src/pl/javastart/fxaction/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/pl/javastart/fxaction/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/pl/javastart/fxaction/view/Exercise48.fxml" />
+        <option value="$PROJECT_DIR$/src/pl/javastart/fxaction/main/Exercise48Main.java" />
+        <option value="$PROJECT_DIR$/src/pl/javastart/fxaction/controller/Exercise48Controller.java" />
       </list>
     </option>
   </component>
@@ -138,50 +166,46 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Mp3Player" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mp3Player" type="462c0819:PsiDirectoryNode" />
+              <item name="FxActionProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FxActionProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mp3Player" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mp3Player" type="462c0819:PsiDirectoryNode" />
+              <item name="FxActionProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FxActionProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mp3Player" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mp3Player" type="462c0819:PsiDirectoryNode" />
+              <item name="FxActionProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FxActionProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mp3player" type="462c0819:PsiDirectoryNode" />
+              <item name="fxaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mp3Player" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mp3Player" type="462c0819:PsiDirectoryNode" />
+              <item name="FxActionProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FxActionProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mp3player" type="462c0819:PsiDirectoryNode" />
+              <item name="fxaction" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mp3Player" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mp3Player" type="462c0819:PsiDirectoryNode" />
+              <item name="FxActionProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FxActionProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mp3player" type="462c0819:PsiDirectoryNode" />
+              <item name="fxaction" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Mp3Player" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mp3Player" type="462c0819:PsiDirectoryNode" />
+              <item name="FxActionProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FxActionProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mp3player" type="462c0819:PsiDirectoryNode" />
+              <item name="fxaction" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mp3Player" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -200,13 +224,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FirstFX" />
     <property name="recentsLimit" value="5" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\java\javastart\javafx\Mp3Player\src\sample" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -220,17 +238,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Exercise48Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="pl.javastart.mp3player.main.Main" />
-      <module name="Mp3Player" />
+    <configuration name="Exercise48Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.javastart.fxaction.main.Exercise48Main" />
+      <module name="FxActionProject" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.javastart.mp3player.main.*" />
+          <option name="PATTERN" value="pl.javastart.fxaction.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.javastart.fxaction.main.Main" />
+      <module name="FxActionProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.javastart.fxaction.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="FxActionProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -304,6 +344,17 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Exercise48Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Exercise48Main" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -316,12 +367,12 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1537758053073" duration="5520000" />
+      <workItem from="1537798616907" duration="4318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6822000" />
+    <option name="totallyTimeSpent" value="5620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -377,7 +428,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pl/javastart/mp3player/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -402,10 +453,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -417,28 +471,56 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/javastart/mp3player/view/MainPane.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FxActionProject.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/view/MainPane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/javastart/mp3player/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="218">
+          <caret line="23" column="97" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/javastart/mp3player/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/view/Exercise48Pane.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/main/Exercise48Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="272">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/javastart/fxaction/controller/Exercise48Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
