@@ -1,4 +1,4 @@
-package sample;
+package pl.javastart.mp3player.main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        final String appName = "Mp3Player v0.1";
+        final String appName = "Mp3Player v0.2";
         BorderPane root = new BorderPane();
         Scene scene = new Scene(root, 400, 400);
         scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
