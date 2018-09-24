@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <left>
@@ -16,6 +24,12 @@
             <Label text="Label2" />
             <Label text="Label3" />
             <Label text="Label4" />
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
          </children>
       </VBox>
    </left>
@@ -27,8 +41,36 @@
          <children>
             <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Button" />
             <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Button" />
-            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Button" />
+            <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Button" textFill="#e02f2f">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font></Button>
+            <CheckBox mnemonicParsing="false" selected="true" text="CheckBox" />
+            <Label text="Label" />
+            <ListView editable="true" prefHeight="200.0" prefWidth="200.0" />
+            <Slider />
          </children>
       </HBox>
    </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>
