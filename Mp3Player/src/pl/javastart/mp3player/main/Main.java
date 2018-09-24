@@ -4,17 +4,17 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        final String appName = "Mp3Player v0.3";
-        BorderPane root = new BorderPane();
-        Scene scene = new Scene(root, 400, 400);
-//        scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+        final String appName = "Mp3Player v0.4";
+        Parent parent = FXMLLoader.load(getClass().getResource(
+                "/pl/javastart/mp3player/view/MainPane.fxml"
+        ));
+        Scene scene = new Scene(parent);
         primaryStage.setTitle(appName);
         primaryStage.setScene(scene);
         primaryStage.show();

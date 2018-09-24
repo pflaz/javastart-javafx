@@ -12,22 +12,22 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.javastart.mp3player.controller.MainController">
     <top>
         <AnchorPane BorderPane.alignment="CENTER">
             <children>
                 <MenuBar>
                     <menus>
-                        <Menu mnemonicParsing="false" text="File">
+                        <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="Open Mp3 file" />
-                                <MenuItem mnemonicParsing="false" text="Open directory" />
-                                <MenuItem mnemonicParsing="false" text="Close" />
+                                <MenuItem fx:id="fileMenuItem" mnemonicParsing="false" text="Open Mp3 file" />
+                                <MenuItem fx:id="dirMenuItem" mnemonicParsing="false" text="Open directory" />
+                                <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
                             </items>
                         </Menu>
                         <Menu mnemonicParsing="false" text="Help">
                             <items>
-                                <MenuItem mnemonicParsing="false" text="About" />
+                                <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
                             </items>
                         </Menu>
                     </menus>
@@ -37,7 +37,7 @@
     <center>
         <AnchorPane BorderPane.alignment="CENTER">
             <children>
-                <TableView prefHeight="200.0" prefWidth="200.0">
+                <TableView fx:id="contentTable" prefHeight="200.0" prefWidth="200.0">
                     <columns>
                         <TableColumn prefWidth="75.0" text="C1" />
                         <TableColumn prefWidth="75.0" text="C2" />
@@ -48,11 +48,11 @@
     <bottom>
         <HBox BorderPane.alignment="CENTER">
             <children>
-                <Button mnemonicParsing="false" text="Button" />
-                <ToggleButton mnemonicParsing="false" text="ToggleButton" />
-                <Button mnemonicParsing="false" text="Button" />
-                <Slider />
-                <Slider />
+                <Button fx:id="prevButton" mnemonicParsing="false" text="Button" />
+                <ToggleButton fx:id="playButton" mnemonicParsing="false" text="ToggleButton" />
+                <Button fx:id="nextButton" mnemonicParsing="false" text="Button" />
+                <Slider fx:id="volumeSlider" />
+                <Slider fx:id="songSlider" />
             </children></HBox>
     </bottom>
 </BorderPane>
