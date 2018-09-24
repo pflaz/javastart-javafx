@@ -60,11 +60,7 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainPane.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pl/javastart/youtufy/view/MainPane.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
@@ -130,6 +126,13 @@
               <item name="Youtufy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="youtufy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Youtufy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Youtufy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="youtufy" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,12 +262,12 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1537758449021" duration="2336000" />
+      <workItem from="1537758449021" duration="3022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3638000" />
+    <option name="totallyTimeSpent" value="4324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -371,11 +374,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/javastart/youtufy/view/MainPane.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
