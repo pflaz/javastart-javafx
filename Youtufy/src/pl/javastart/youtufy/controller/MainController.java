@@ -1,13 +1,13 @@
 package pl.javastart.youtufy.controller;
 
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.Slider;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.web.WebView;
 
 import java.net.URL;
@@ -19,7 +19,7 @@ public class MainController implements Initializable {
     private Button previousButton;
 
     @FXML
-    private Button playButton;
+    private ToggleButton playButton;
 
     @FXML
     private Button nextButton;
@@ -34,7 +34,7 @@ public class MainController implements Initializable {
     private TextField searchTextField;
 
     @FXML
-    private ListView<?> historyListView;
+    private ListView<String> historyListView;
 
     @FXML
     private WebView videoWebView;
@@ -47,6 +47,40 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        configureButtons();
+        configureSearchField();
 
+    }
+
+    private void configureSearchField() {
+        searchTextField.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                String searchQuery = searchTextField.getText();
+                ObservableList<String> historyList = historyListView.getItems();
+
+                if (event.getCode().equals(KeyCode.ENTER)){
+                    if (historyList.isEmpty() || !historyList.get(0).equals(searchQuery)) {
+                        historyList.add(0, searchQuery);
+                    }
+                }
+            }
+        });
+
+    }
+
+    public void configureButtons() {
+        previousButton.setOnAction(event -> System.out.println("Previous"));
+        nextButton.setOnAction(event -> System.out.println("Next"));
+        playButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                if (playButton.isSelected()) {
+                    System.out.println("Playing...");
+                } else {
+                    System.out.println("Stop");
+                }
+            }
+        });
     }
 }
