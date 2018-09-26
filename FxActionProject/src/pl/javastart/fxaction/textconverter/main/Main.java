@@ -1,4 +1,4 @@
-package pl.javastart.fxaction.main;
+package pl.javastart.fxaction.textconverter.main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Exercise48Main extends Application {
+public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -17,7 +17,7 @@ public class Exercise48Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent parent = FXMLLoader.load(getClass().getResource(
-                "/pl/javastart/fxaction/view/Exercise48Pane.fxml"
+                "/pl/javastart/fxaction/textconverter/view/MainPane.fxml"
         ));
         Scene scene = new Scene(parent);
         primaryStage.setScene(scene);

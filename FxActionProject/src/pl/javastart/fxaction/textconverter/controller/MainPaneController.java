@@ -1,4 +1,4 @@
-package pl.javastart.fxaction.controller;
+package pl.javastart.fxaction.textconverter.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -9,19 +9,19 @@ import javafx.scene.input.KeyEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Exercise48Controller implements Initializable {
+public class MainPaneController implements Initializable {
 
     @FXML
-    private TextArea leftTextField;
-
-    @FXML
-    private TextArea rightTextField;
+    private TextPaneController textPaneController;
 
     @FXML
     private Button clearButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        TextArea leftTextField = textPaneController.getLeftTextField();
+        TextArea rightTextField = textPaneController.getRightTextField();
 
         clearButton.setOnAction(event -> {
             leftTextField.clear();
@@ -34,8 +34,7 @@ public class Exercise48Controller implements Initializable {
         });
 
         rightTextField.addEventFilter(KeyEvent.KEY_RELEASED, event ->
-            leftTextField.setText(new StringBuilder(rightTextField.getText()).reverse().toString())
+                leftTextField.setText(new StringBuilder(rightTextField.getText()).reverse().toString())
         );
-
     }
 }
