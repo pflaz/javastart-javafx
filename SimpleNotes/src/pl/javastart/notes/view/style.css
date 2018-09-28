@@ -1,0 +1,18 @@
+#text-area {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 13;
+    -fx-font-style: italic;
+}
+
+#text-area:focused {
+    -fx-control-inner-background: gray;
+}
+
+#clear-button {
+    -fx-background-color: pink;
+    -fx-text-fill: black;
+}
+
+#clear-button:hover {
+    -fx-opacity: 0.5;
+}

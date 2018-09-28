@@ -1,5 +1,7 @@
 package pl.javastart.mp3player.controller;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -31,11 +33,18 @@ public class ControlPaneController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         configureButtons();
-        configureVolume();
+        configureSliders();
     }
 
-    private void configureVolume() {
-        volumeSlider.addEventFilter(MouseEvent.MOUSE_PRESSED, event -> System.out.println("Volume slider pressed"));
+    private void configureSliders() {
+         volumeSlider.valueProperty().addListener(new ChangeListener<Number>() {
+             @Override
+             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                 System.out.println("Volume level changed: " + newValue.doubleValue());
+             }
+         });
+
+         songSlider.valueProperty().addListener(x -> System.out.println("Przesunięcie piosenki"));
     }
 
     private void configureButtons() {
