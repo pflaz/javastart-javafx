@@ -23,6 +23,7 @@ public class Main extends Application {
         Scene scene = new Scene(parent);
         primaryStage.setScene(scene);
         primaryStage.setTitle(appName);
+        setUserAgentStylesheet(STYLESHEET_CASPIAN);
         primaryStage.show();
     }
 }
