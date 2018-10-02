@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+</head>
+<body style="background-color: #1d1d1d">
+    <div style="text-align: center;">
+        <div id="player">
+        </div>
+    </div>
+
+<script>
+    var tag = document.createElement("script");
+    tag.src = "http://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '270',
+            width: '480',
+            videoId: 'kxQMMg8phj8',
+            events: {}
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -58,10 +58,11 @@
     -fx-padding: 1;
 }
 
-.web-view,
+
+/*.web-view,
 .web-view .scroll-bar:vertical {
     -fx-blend-mode: darken;
-}
+}*/
 
 /* tło tabeli */
 .table-view,

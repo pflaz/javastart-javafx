@@ -19,6 +19,22 @@ public class SearchPaneController implements Initializable {
     @FXML
     private ListView<String> historyListView;
 
+    public TextField getSearchTextField() {
+        return searchTextField;
+    }
+
+    public void setSearchTextField(TextField searchTextField) {
+        this.searchTextField = searchTextField;
+    }
+
+    public ListView<String> getHistoryListView() {
+        return historyListView;
+    }
+
+    public void setHistoryListView(ListView<String> historyListView) {
+        this.historyListView = historyListView;
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         configureSearchField();
