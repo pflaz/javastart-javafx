@@ -25,6 +25,10 @@ public class ContentPaneController implements Initializable {
     @FXML
     private TableView<Mp3Song> contentTable;
 
+    public TableView<Mp3Song> getContentTable() {
+        return contentTable;
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         configureTable();

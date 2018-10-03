@@ -79,8 +79,8 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pl/javastart/youtufy/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+            <state relative-caret-position="197">
+              <caret line="163" selection-start-line="163" selection-end-line="163" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5676#6425#0" expanded="true" />
@@ -397,12 +397,12 @@
       <workItem from="1538154038013" duration="253000" />
       <workItem from="1538154317961" duration="19000" />
       <workItem from="1538392402121" duration="10051000" />
-      <workItem from="1538424002742" duration="832000" />
+      <workItem from="1538424002742" duration="1263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27398000" />
+    <option name="totallyTimeSpent" value="27829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -417,7 +417,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827586" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827586" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="2" />
@@ -720,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/javastart/youtufy/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        <state relative-caret-position="197">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5676#6425#0" expanded="true" />

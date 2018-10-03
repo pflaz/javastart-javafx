@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_mp3player" default="compile.module.mp3player">
+  <dirname property="module.mp3player.basedir" file="${ant.file.module_mp3player}"/>
+  
+  <property name="module.jdk.home.mp3player" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.mp3player" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.mp3player" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.mp3player" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="mp3player.output.dir" value="${module.mp3player.basedir}/out/production/Mp3Player"/>
+  <property name="mp3player.testoutput.dir" value="${module.mp3player.basedir}/out/test/Mp3Player"/>
+  
+  <path id="mp3player.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="mp3player.module.production.classpath">
+    <path refid="${module.jdk.classpath.mp3player}"/>
+    <path refid="library.jid3lib-0.5.4.classpath"/>
+  </path>
+  
+  <path id="mp3player.runtime.production.module.classpath">
+    <pathelement location="${mp3player.output.dir}"/>
+    <path refid="library.jid3lib-0.5.4.classpath"/>
+  </path>
+  
+  <path id="mp3player.module.classpath">
+    <path refid="${module.jdk.classpath.mp3player}"/>
+    <pathelement location="${mp3player.output.dir}"/>
+    <path refid="library.jid3lib-0.5.4.classpath"/>
+  </path>
+  
+  <path id="mp3player.runtime.module.classpath">
+    <pathelement location="${mp3player.testoutput.dir}"/>
+    <pathelement location="${mp3player.output.dir}"/>
+    <path refid="library.jid3lib-0.5.4.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.mp3player">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.mp3player">
+    <patternset refid="excluded.from.module.mp3player"/>
+  </patternset>
+  
+  <path id="mp3player.module.sourcepath">
+    <dirset dir="${module.mp3player.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.mp3player" depends="compile.module.mp3player.production,compile.module.mp3player.tests" description="Compile module Mp3Player"/>
+  
+  <target name="compile.module.mp3player.production" depends="register.custom.compilers" description="Compile module Mp3Player; production classes">
+    <mkdir dir="${mp3player.output.dir}"/>
+    <javac2 destdir="${mp3player.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.mp3player}/javac">
+      <compilerarg line="${compiler.args.mp3player}"/>
+      <bootclasspath refid="mp3player.module.bootclasspath"/>
+      <classpath refid="mp3player.module.production.classpath"/>
+      <src refid="mp3player.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.mp3player"/>
+    </javac2>
+    
+    <copy todir="${mp3player.output.dir}">
+      <fileset dir="${module.mp3player.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.mp3player.tests" depends="register.custom.compilers,compile.module.mp3player.production" description="compile module Mp3Player; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.mp3player" description="cleanup module">
+    <delete dir="${mp3player.output.dir}"/>
+    <delete dir="${mp3player.testoutput.dir}"/>
+  </target>
+</project>
